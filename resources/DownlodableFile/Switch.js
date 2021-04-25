@@ -24,9 +24,9 @@ const Diagnostics = require('Diagnostics');
     // Locate the material and texture in the Assets
     const [MaskMaterial, Design1, Design2, Design3] = await Promise.all([
       Materials.findFirst('MaskDesign'),
-      Textures.findFirst('1'),
-      Textures.findFirst('2'),
-      Textures.findFirst('3')
+      Textures.findFirst('D1'),
+      Textures.findFirst('D2'),
+      Textures.findFirst('D3')
     ]);
 
     Diagnostics.log("Screen ready")
